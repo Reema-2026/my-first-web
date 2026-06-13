@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>موقعي الاول</title>
-        <style>
-            body{
-                background-color: #c0bebe;
-                font-family: Arial;
-                text-align: center;
-                margin-top: 80px;
-            }
-            input{
-                padding: 10px;
-                width: 200px;
-                margin: 10px;
-            }
-            button{
-                padding: 10px;
-                cursor: pointer;
-            }
-            h2{
-                color:rgb(10, 6, 217);
-            }
-          
-        </style>
-    </head>
-    <body>
-        <h1>موقعي الشخصي </h1>
-        <p>انا اتعلم تطوير الويب   </p>
-         <input id="input"placeholder="ريما بنت عتيق">
 
-        <button onclick="showName()">
-عرض الاسم
-        </button> 
+<head>
+  <title>بروفايلي</title>
 
-        <h2 id="result">
-        </h2>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #eef2ff;
+      margin-top: 60px;
+    }
 
-        <script>
-            function showName(){
-                 let name = document.getElementById("input").value;
-                document.getElementById("result").innerText = "مرحبا " + name + "!";}
-        </script>
-    </body>
+    .card {
+      background: white;
+      width: 300px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    h1 {
+      color: #4a5cff;
+    }
+
+    button {
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>موقعي الشخصي 👩‍💻</h1>
+
+    <p>مطور ويب مبتدئ</p>
+
+    <input id="input" placeholder="اكتب اسمك">
+
+    <br>
+
+    <button onclick="showName()">عرض الترحيب</button>
+
+    <h2 id="result"></h2>
+
+  </div>
+
+  <script>
+    function showName() {
+      let name = document.getElementById("input").value;
+      document.getElementById("result").innerText =
+        "هلا " + name + " 👋";
+    }
+  </script>
+
+</body>
+
 </html>
